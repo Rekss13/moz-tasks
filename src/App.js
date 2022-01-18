@@ -79,7 +79,7 @@ function App(props) {
                 {filterList}
             </div>
             <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>{headingText}</h2>
-            <ul role="list" className="todo-list stack-large stack-exception" aria-labelledby="list-heading" >
+            <ul className="todo-list stack-large stack-exception" aria-labelledby="list-heading" >
                 {taskList}
             </ul>
         </div>
