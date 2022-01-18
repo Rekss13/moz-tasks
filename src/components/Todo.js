@@ -1,10 +1,5 @@
 import React, {useEffect, useRef, useState} from "react";
-
-const usePrevious = (value) => {
-    const ref = useRef();
-    useEffect(() => ref.current = value);
-    return ref.current;
-}
+import usePrevious from "../utils/usePrevious";
 
 const Todo = (props) => {
     const [isEditing, setEditing] = useState(false);
@@ -89,6 +84,6 @@ const Todo = (props) => {
     }, [wasEditing, isEditing]);
     
     return <li className="todo">{isEditing ? editingTemplate : viewTemplate}</li>;
-};
+}
 
 export default Todo;

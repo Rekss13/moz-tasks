@@ -8,6 +8,6 @@ const FilterButton = (props) => {
             <span className="visually-hidden"> tasks</span>
         </button>
     );
-};
+}
 
 export default FilterButton;

@@ -3,6 +3,7 @@ import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 import Todo from "./components/Todo";
 import React, {useState, useRef, useEffect} from "react";
+import usePrevious from "./utils/usePrevious";
 
 const FILTER_MAP = {
     All: () => true,
@@ -11,12 +12,6 @@ const FILTER_MAP = {
 }
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
-
-const usePrevious = (value) => {
-    const ref = useRef();
-    useEffect(() => ref.current = value);
-    return ref.current;
-}
 
 function App(props) {
     const [tasks, setTasks] = useState(props.tasks);
