@@ -14,6 +14,7 @@ function App() {
     const themeHook = useState("light");
     const theme = themeHook[0];
     const currentTheme = AppTheme[theme];
+    document.body.style.background = currentTheme.backgroundColor;
 
     return (
         <ThemeContext.Provider value={themeHook}>
