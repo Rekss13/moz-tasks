@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useState} from "react";
 import ThemeContext from "./context/ThemeContext";
 import AppTheme from "./AppTheme";
 import Header from "./components/Header";
